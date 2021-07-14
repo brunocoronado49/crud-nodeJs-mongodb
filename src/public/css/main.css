@@ -1,10 +1,13 @@
 body {
-    background: #3498db;
-    color: #2c3e50;
+    background: #192a56;
 }
 
 .title {
     background: #ecf0f1;
     padding: 50px;
     margin: 50px;
+}
+
+.logo {
+    width: 60%;
 }

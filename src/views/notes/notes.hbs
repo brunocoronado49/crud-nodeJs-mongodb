@@ -1,3 +1,7 @@
+<div class="d-grid gap-2 col-6 mx-auto">
+    <a href="/notes/create" class="btn btn-success">Crear nota</a>
+</div>
+<br>
 <div class="row">
     {{#each notes}}
     <div class="col-md-3">
@@ -15,10 +19,17 @@
         </div>
     </div>
     {{else}}
-    <div class="card mx-auto">
-        <div class="card-body">
-            <h5 class="lead">No hay notas aún</h5>
-            <a href="/notes/create" class="btn btn-success">Create</a>
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                <center>
+                    <h3>Hola {{user.name}}!</h3>
+                    <h6 class="lead">No hay notas aún</h6>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <a href="/notes/create" class="btn btn-success">Crear nota</a>
+                    </div>
+                </center>
+            </div>
         </div>
     </div>
     {{/each}}
